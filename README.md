@@ -20,5 +20,5 @@ Mi Card is a personal business card. Imagine every time you wanted to give someo
 * How to read and use Flutter Documentation
 
 <p align="center">
-<img src= "images/business-card.png" height=400px>
+<img src= "images/business-card.png" height=600px>
 </p>
