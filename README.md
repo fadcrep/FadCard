@@ -1,5 +1,6 @@
 
-<img align="left" src= "images/business-card.png" height=600px>
+
+
 # Mi Card
 
 ## On my way to learn flutter
@@ -21,3 +22,5 @@ You can use it also for profil page in your flutter app with some customisation
 * How to style Text widgets
 * How to read and use Flutter Documentation
 
+
+<img align="left" src= "images/business-card.png" height=600px>
