@@ -1,8 +1,7 @@
 
 
-
-----------
 # Mi Card
+<img align="left" src= "images/business-card.png" height=600px>
 
 ## On my way to learn flutter
 
@@ -14,7 +13,7 @@ You can use it also for profil page in your flutter app with some customisation
 
 ### What i learn
 
-<img align="left" src= "images/business-card.png" height=600px>
+
 
 * How to create Stateless Widgets
 * What is the difference between hot reload and hot refresh and running an app from cold
