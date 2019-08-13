@@ -1,4 +1,5 @@
 
+<img align="left" src= "images/business-card.png" height=600px>
 # Mi Card
 
 ## On my way to learn flutter
@@ -19,6 +20,3 @@ Mi Card is a personal business card. Imagine every time you wanted to give someo
 * How to style Text widgets
 * How to read and use Flutter Documentation
 
-<p align="center">
-<img src= "images/business-card.png" height=600px>
-</p>
