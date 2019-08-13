@@ -20,4 +20,4 @@ Mi Card is a personal business card. Imagine every time you wanted to give someo
 * How to read and use Flutter Documentation
 
 
-![Fadjo Crepin](images/business-card.png | width=250)
+![Fadjo Crepin](images/business-card.png ){:height="24px" width="48px"}
