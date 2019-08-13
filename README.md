@@ -16,7 +16,6 @@ You can use it also for profil page in your flutter app with some customisation
 
 <img align="left" src= "images/business-card.png" height=600px>
 
-
 * How to create Stateless Widgets
 * What is the difference between hot reload and hot refresh and running an app from cold
 * How to use Containers to lay out your UI
