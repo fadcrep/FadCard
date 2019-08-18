@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,37 +45,48 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade100,
                 ),
               ),
-              Card(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.phone,
-                    color: Colors.teal,
+              InkWell(
+                child: Card(
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      '+229 96119149',
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 20,
+                          color: Colors.teal.shade900),
+                    ),
                   ),
-                  title: Text(
-                    '+229 96119149',
-                    style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 20,
-                        color: Colors.teal.shade900),
-                  ),
+
                 ),
+                onTap: (){
+                  _launchURL('tel:+229 96119149');
+                }
               ),
-              Card(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.email,
-                    color: Colors.teal,
-                  ),
-                  title:Text(
-                    'fadcrepin@gmail.com',
-                    style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 20,
-                        color: Colors.teal.shade900),
+              InkWell(
+                child: Card(
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title:Text(
+                      'fadcrepin@gmail.com',
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 20,
+                          color: Colors.teal.shade900),
+                    ),
                   ),
                 ),
+                onTap: (){
+                  _launchURL('mailto:fadcrepin@gmail.com?subject=Need Flutter developer&body=Please contact me');
+                },
               ),
             ],
           ),
@@ -83,5 +95,17 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+_launchURL(var url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+
+
 
 
